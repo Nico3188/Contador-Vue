@@ -1,0 +1,30 @@
+html,body{
+    text-align: center;
+    background-color: rgb(100, 198, 237);
+    color: white;
+}
+
+.app{
+    display: block;
+    text-align: center;
+}
+
+.count{
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: serif;
+}
+
+button{
+    background-color: gainsboro;
+    border-radius: 0,0.5rem;
+    padding: 1rem;
+    font-size: 16px;
+    margin: 0,10px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(185, 160, 160) ;
+    
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es ">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" type="" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Metadata para PWA -->
+    <!--Modificar color en la barra de estado de Android-->
+    <meta name="theme-color" content="rgb(100, 198, 237)">
+    <!--Optimizacion del SEO-->
+    <meta name="MobileOptimezed" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <!--Modificar Barra de estado IOS-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!--iconos-->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="./img/favicon.png">
+    <link rel="apple-touch-startup-image" href="./img/favicon.png">
+    <!--Manifest-->
+    <link rel="manifest" href="./manifest.json">
+</head>
+<body>
+    <div id="app" class = "app">
+        <h1 class="title">{{title}}</h1><hr>
+        <h3 class="count">{{count}}</h3><hr>
+        <div>
+            <button v-on:click="modCount('dis',1)"> -1</button>
+            <button @click="modCount('',1)">+1</button>
+        </div>
+        <script src="./load.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/mount.js"></script>
+    </div>
+</body>
+</html>
